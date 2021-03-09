@@ -1,0 +1,252 @@
+/*Here lies CSS*/
+html {
+    scroll-behavior: smooth;
+  }
+
+#mainTitle {
+    margin-top: 10vh;
+    font-weight: 500;
+    color: #f58220;
+    font-weight: bold;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+/*57a5b2*/
+
+#subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f58220;
+    padding-top: 2vh;
+    font-weight: 200;
+    font-size: 2vw;
+}
+
+#buttonText {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+#downArrow {
+    width: 6vh;
+    margin-top: 21vh;
+    opacity: 0;
+    -webkit-animation: 3s fadein-2 ease 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: 3s fadein-2 ease 4s; /* Firefox < 16 */
+    -ms-animation: 3s fadein-2 ease 4s; /* Internet Explorer */
+    -o-animation: 3s fadein-2 ease 4s; /* Opera < 12.1 */
+    animation: 3s fadein-2 ease 4s;
+    animation-fill-mode: forwards;
+    transition-duration: 1s;
+}
+
+
+#downArrow:hover {
+    margin-top: 22vh;
+}
+
+
+/* welcome section */
+
+#mainContainer {
+    height: 300vh;
+    width: 100vw; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+}
+
+#videoDiv {
+   width: 100vw;
+   overflow-x: hidden;
+   position: sticky;
+   z-index: -1;
+   top: 0;
+}
+
+#videoDiv video {
+    overflow-x: hidden;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+#overlay {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    height: 300vh;
+    width: 100vw;
+    background-color: #000000;
+    opacity: .80;
+}
+
+#introCon {
+    top: 0vh;
+    position: absolute;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#infoCon {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 100vh;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+
+#infoText {
+    padding: 7vw;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+#creditsCon {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 200vh;
+    z-index: 1;
+}
+
+#titleCon {
+    padding-top: 16vh;
+    padding-bottom: 2vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#subtitleCon {
+    margin-top: 1vh;
+    opacity: 0;
+    -webkit-animation: 3s fadein-2 ease 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: 3s fadein-2 ease 4s; /* Firefox < 16 */
+    -ms-animation: 3s fadein-2 ease 4s; /* Internet Explorer */
+    -o-animation: 3s fadein-2 ease 4s; /* Opera < 12.1 */
+    animation: 3s fadein-2 ease 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein-2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#dec-line {
+    border-bottom: solid 6px #f15922;
+    border-radius: 2px;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-animation: 1s line-grow ease 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: 1s line-grow ease 3s; /* Firefox < 16 */
+    -ms-animation: 1s line-grow ease 3s; /* Internet Explorer */
+    -o-animation: 1s line-grow ease 3s; /* Opera < 12.1 */
+    animation: 1s line-grow ease 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-grow {
+    from { width: 0vw; opacity:0; }
+    to   { width: 50vw; opacity:1;}
+}
+
+#city-studio-london-logo {
+    padding: 2%;
+    width: 10%;
+    margin: 0 auto;
+
+/* -webkit-animation: 2s fadein ease 4s; /* Safari, Chrome and Opera > 12.1 */
+/*    -moz-animation: 2s fadein ease 4s; /* Firefox < 16 */
+/*    -ms-animation: 2s fadein ease 4s; /* Internet Explorer */
+/*    -o-animation: 2s fadein ease 4s; /* Opera < 12.1 */
+/*    animation: 2s fadein ease 4s;
+/*    animation-fill-mode: forwards;*/
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#projButton {
+    heighT: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin: 0 auto;
+    bottom: 90px;
+    right: 90px;
+    background-color: #94BEDD;
+    position: fixed;
+}
+
+  
+  #projButton:after {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-shadow: inset 0 0 0 3px #94BEDD;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  #projButton:hover:after {
+    transform: scale(1.75);
+    opacity: 0.8;
+  }
+  
+  .pulsing:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-shadow: inset 0 0 0 3px #94BEDD;
+    transition: transform 0.2s, opacity 0.2s;
+    animation: pulsing 2.7s infinite;
+  }
+  
+  @keyframes pulsing {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+
