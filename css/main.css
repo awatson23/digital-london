@@ -32,6 +32,37 @@ html {
     margin-top: 40px;
 }
 
+#title-white {
+    margin-top: 10vh;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+
+#subtitle-white {
+    margin-top: 10vh;
+    font-weight: 300;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+
+#copy-white {
+    margin-top: 10vh;
+    font-weight: 200;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+
 #downArrow {
     width: 6vh;
     margin-top: 21vh;
@@ -59,7 +90,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
     flex-direction: column;
 }
@@ -89,6 +120,7 @@ html {
     width: 100vw;
     background-color: #000000;
     opacity: .80;
+    
 }
 
 #introCon {
@@ -100,9 +132,10 @@ html {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
-#infoCon {
+#infoCon-main {
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -110,6 +143,7 @@ html {
     z-index: 1;
     opacity: 0;
     transition-duration: 1.5s;
+    overflow-x: hidden;
 }
 
 #infoText {
@@ -127,7 +161,6 @@ html {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-color: white;
     top: 200vh;
     z-index: 1;
 }
@@ -249,4 +282,17 @@ html {
     }
   }
 
+
+#infoCon-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+#infoCon-column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
 
