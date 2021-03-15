@@ -25,11 +25,11 @@ html {
 
 #buttonText {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 #title-white {
@@ -189,7 +189,7 @@ html {
 }
 
 #dec-line {
-    border-bottom: solid 6px #f15922;
+    border-bottom: solid 2px #f15922;
     border-radius: 2px;
     margin: 0 auto;
     opacity: 0;
